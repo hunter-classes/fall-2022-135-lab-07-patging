@@ -6,9 +6,7 @@
 
 * GitHub username: patging
 
-* Notes:
-
-
+* Notes: Test file is called badcode.cpp. Output for main will be a file called output.cpp There's a target for compiling an implementation of stringUtil.cpp's removeLeadingSpaces() called unIndent. Output
   
 * General instructions:
 - Fill in your name and GitHub username on top.

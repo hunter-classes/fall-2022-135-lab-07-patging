@@ -1,6 +1,13 @@
+/* 
+Patrick Ging
+Professor Zamanksy
+Lab 7
+stringUtil.cpp
+*/
 
 #include <iostream>
 #include <cctype>
+#include <fstream>
 
 std::string removeLeadingSpaces(std::string line) {
 	/* 
@@ -30,21 +37,22 @@ std::string removeLeadingSpaces(std::string line) {
 	return return_string;
 }
 
-void unindent() {
-	// uses std::cin to read in lines form a file and removes their tabbing
+std::string createTabs(int num) {
+	// creates a string w 
+	std::string return_string = "";
 
-	std::string line;
-
-	while (std::getline(std::cin, line)) {
-		std::cout << removeLeadingSpaces(line) << std::endl;
+	for (int i =0; i<num;i++) {
+		return_string = return_string + "\t";
 	}
-
-	return;
+	return return_string;
 }
 
-
-int main() {
-
-	unindent();
-	return 0;
+bool hasChar(std::string s, char c) {
+	// returns if a char is in a string
+	for(int i=0; i<s.length();i++) {
+		if( s[i] == c) {
+			return true;
+		}
+	}
+	return false;
 }
